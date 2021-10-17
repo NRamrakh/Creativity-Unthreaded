@@ -1,0 +1,26 @@
+<%-include('../partials/header.ejs')%>
+<main>
+    <section>
+        <%if(data.length){%>
+           <% data.forEach(event=>{%>
+
+            <h2><%=Object.keys(event)[0]%></h2>
+               <%event[Object.keys(event)[0]].forEach(value=>{%>
+                <p>
+                    <a href="/events/<%= value.id%>">
+                        <%= value.name%>
+                    </a>
+
+
+                </p>   
+              <% })%>
+
+           <% })%>
+
+        <%}else{%>
+            <p>There are no events to display.</p>
+        <%}%> 
+    </section>
+</main>
+
+<%-include('../partials/footer.ejs')%>
