@@ -7,7 +7,7 @@ Creativity Unthreaded is a web application in progress. It is a platform for art
 
 **IDE used:** Visual Studio Code
 
-**Runtime environment:** Node js
+**Runtime environment:** Node JS
 
 
 ## Snapshots of the website
