@@ -3,11 +3,7 @@
 
 Creativity Unthreaded is a web application in progress. It is a platform for art and craft. It will give you the chance to showcase your ideas, work on your art skills, learn new art forms, organise an event and volunteer at exclusive decoration events. This is the platform for creative souls. 
 
-**Languages used:** HTML, CSS, Javascript, EJS
-
-**IDE used:** Visual Studio Code
-
-**Runtime environment:** Node JS
+**Languages used:** HTML, CSS, Javascript, EJS, Node JS
 
 
 ## Snapshots of the website
