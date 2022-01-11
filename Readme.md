@@ -5,6 +5,9 @@ Creativity Unthreaded is a web application in progress. It is a platform for art
 
 **Languages used:** HTML, CSS, Javascript, EJS, Node JS
 
+**Scope of this project:** 
+The scope of this project basically consists of login functionalities capturing general information of the customer, maintaining track of all the events created by the customers using sessions and cookies.  It allows the authorized users to create, update, delete and give RSVP for events/workshops they might be interested in. The project can be further extended to sell the art and craft materials required for decorating an event or learning an art. We can also add the payment functionality for the services provided by this portal.
+
 
 ## Snapshots of the website
 
