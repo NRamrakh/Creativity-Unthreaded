@@ -16,6 +16,9 @@ Creativity Unthreaded is a web application in progress. It is a platform for art
 ![contact](https://user-images.githubusercontent.com/70915043/137672111-996d8f46-6593-4bfd-96a7-c29475a0b29c.png)
 ![edit](https://user-images.githubusercontent.com/70915043/137672184-b5def80a-87b8-4dc5-bf9d-b357bb37a3de.png)
 ![error](https://user-images.githubusercontent.com/70915043/137672168-1b100b37-794e-4bfb-86db-ba462546c658.png)
+![image](https://user-images.githubusercontent.com/70915043/148987543-ddd90ca5-4474-4f0f-a527-5d6f9653917b.png)
+![image](https://user-images.githubusercontent.com/70915043/148987721-0dc0bc3f-bdec-4812-ba36-30c1dc2faceb.png)
+
 
 
 **This web application is in progress and I will update the repository when the entire application is ready**
