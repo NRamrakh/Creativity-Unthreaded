@@ -21,7 +21,5 @@ Creativity Unthreaded is a web application in progress. It is a platform for art
 
 
 
-**This web application is in progress and I will update the repository when the entire application is ready**
-
 
 
