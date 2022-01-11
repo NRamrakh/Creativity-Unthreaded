@@ -9,4 +9,6 @@ router.get('/about',controller.about);
 
 router.get('/home',controller.home);
 
+router.get('/', controller.main);
+
 module.exports=router;

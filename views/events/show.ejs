@@ -8,17 +8,30 @@
             </div>
 
             <div id="event-detail">
-                Hosted by <%=event.host_name%> <br>
+                Hosted by <%=event.host_name.firstName + " " + event.host_name.lastName%> <br>
                 <p>When:</p> <%=event.date%><br>
                 <%=event.start_time%> - <%=event.end_time%> <br>
                 <p>Where:</p><%=event.venue%>
 
             </div>
 
+        
+            <%if(user &&( (user.id  && user.id == event.host_name._id) ||  (user._id && user._id == event.host_name._id))){%>
             <div class="button-section">
                 <form><button class="buttons" type="submit" formmethod="GET" formaction="/events/<%=event.id%>/edit">Update</button>
                     <button class="buttons" type="submit" formmethod="POST" formaction="/events/<%=event.id%>?_method=DELETE">Delete</button></form>
 
+            
+            <%}else if(user){%>
+                
+                <form>
+                    <p>Count of people attending the event: <%= rsvpCount %> </p><br>
+                    <p>Would you like to attend this event?</p><br>
+                    <button class="Yes" type="submit" name="rsvp" value="Yes" formmethod="POST" formaction="/rsvp/<%=event.id%>?_method=PUT">YES</button>
+                    <button class="No" type="submit" name="rsvp" value="No" formmethod="POST" formaction="/rsvp/<%=event.id%>?_method=PUT">NO</button>
+                    <button class="Maybe" type="submit" name="rsvp" value="Maybe"formmethod="POST" formaction="/rsvp/<%=event.id%>?_method=PUT">MAYBE</button>
+                </form>
+<%}%>
             </div>
 
         </section>

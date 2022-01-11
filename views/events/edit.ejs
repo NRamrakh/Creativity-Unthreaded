@@ -2,48 +2,51 @@
     <main>
         <form method='POST' action="/events/<%=event.id%>?_method=PUT">
             <table>
+
+              <tr>
+                <td><label for="topic"></label> Event Category:</td>
+                <td><input type="text" id="topic" name="topic" value="<%= event.topic%>" class="fixed-width" required/></td>
+      
+              </tr>
             
               <tr>
-                <td><label for="name"></label> Event_Name:</td>
-                <td><input type="text" id="name" name="name" value="<%= event.name%>" class="fixed-width"  /></td>
+                <td><label for="name"></label> Event Name:</td>
+                <td><input type="text" id="name" name="name" value="<%= event.name%>" class="fixed-width"  required/></td>
               </tr>
-              <tr>
-                <td><label for="host_name"></label> Host_Name:</td>
-                <td><input type="text" id="host_name" name="host_name" value="<%= event.host_name%>" class="fixed-width" /></td>
-              </tr>
+            
       
               <tr>
                 <td><label for="date"></label> Date:</td>
-                <td><input type="date" id="date" name="date" value="<%=moment(event.date).format('YYYY-MM-DD')%>" class="fixed-width" /></td>
+                <td><input type="date" id="date" name="date" value="<%=moment(event.date).format('YYYY-MM-DD')%>" class="fixed-width" required/></td>
               </tr>
       
               
               <tr>
                 <td><label for="start_time"></label> Start time:</td>
-               <td><input type="time" id="start_time" name="start_time" value="<%=(event.start_time)%>" class="fixed-width" /></td>
+               <td><input type="time" id="start_time" name="start_time" value="<%=(event.start_time)%>" class="fixed-width" required /></td>
               </tr>
       
               <tr>
                 <td><label for="end_time"></label> End time:</td>
-                <td><input type="time" id="end_time" name="end_time" value="<%= event.end_time%>" class="fixed-width" /></td>
+                <td><input type="time" id="end_time" name="end_time" value="<%= event.end_time%>" class="fixed-width" required /></td>
               </tr>
       
       
               <tr>
                 <td><label for="venue"></label> Venue:</td>
-                <td><input type="text" id="venue" name="venue" value="<%= event.venue%>" class="fixed-width" /></td>
+                <td><input type="text" id="venue" name="venue" value="<%= event.venue%>" class="fixed-width" required /></td>
               </tr>
       
               <tr>
                 <td class="align-top"><label for="details"></label> Details:</td>
-                <td><textarea rows="5" id ="details" name="details"  class="fixed-width"><%=event.details%></textarea></td>
+                <td><textarea rows="5" id ="details" name="details"  class="fixed-width" required minlength="10"><%=event.details%></textarea></td>
       
               </tr>
       
             
               <tr>
                 <td><label for="image"></label> Image: </td>
-                <td><input type="text" id="image" name="image" value="<%= event.image%>" class="fixed-width" /></td>
+                <td><input type="text" id="image" name="image" value="<%= event.image%>" class="fixed-width" required/></td>
               </tr>
       
               <tr>

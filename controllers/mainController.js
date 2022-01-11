@@ -13,3 +13,8 @@ exports.about=(req,res)=>{
 exports.home=(req,res)=>{
     res.render('./index.ejs')
 };
+
+exports.main = (req, res)=>{
+    res.render('./index');
+    };
+    
